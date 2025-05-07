@@ -1,0 +1,74 @@
+{
+	"Name": "soundcloud-control-sd",
+	"Version": "0.1.0.0",
+	"Author": "Pepepizza",
+	"Actions": [
+		 {
+			  "Name": "Initialize Audio",
+			  "UUID": "com.pepepizza.soundcloud-control-sd.initializeaudio",
+			  "Icon": "imgs/plugin/marketplace",
+			  "Tooltip": "Initialize AudioContext for SoundCloud",
+			  "Controllers": ["Keypad"],
+			  "States": [
+					{
+						 "Image": "imgs/plugin/marketplace",
+						 "TitleAlignment": "bottom"
+					}
+			  ]
+		 },
+		 {
+			  "Name": "Play/Pause",
+			  "UUID": "com.pepepizza.soundcloud-control-sd.playpause",
+			  "Icon": "imgs/actions/play/icon",
+			  "Tooltip": "Control Play/Pause for SoundCloud",
+			  "Controllers": ["Keypad"],
+			  "States": [
+					{
+						 "Image": "imgs/actions/play/icon",
+						 "TitleAlignment": "bottom"
+					},
+					{
+						 "Image": "imgs/actions/pause/icon",
+						 "TitleAlignment": "bottom"
+					}
+			  ]
+		 },
+		 {
+			  "Name": "Next",
+			  "UUID": "com.pepepizza.soundcloud-control-sd.next",
+			  "Icon": "imgs/actions/next/icon",
+			  "Tooltip": "Next track on SoundCloud",
+			  "Controllers": ["Keypad"],
+			  "States": [
+					{
+						 "Image": "imgs/actions/next/icon",
+						 "TitleAlignment": "bottom"
+					}
+			  ]
+		 }
+	],
+	"Category": "soundcloud-control-sd",
+	"CategoryIcon": "imgs/plugin/category-icon",
+	"CodePath": "bin/plugin.js",
+	"Description": "Control SoundCloud through Stream Deck",
+	"Icon": "imgs/plugin/marketplace",
+	"SDKVersion": 2,
+	"Software": {
+		 "MinimumVersion": "6.4"
+	},
+	"OS": [
+		 {
+			  "Platform": "mac",
+			  "MinimumVersion": "12"
+		 },
+		 {
+			  "Platform": "windows",
+			  "MinimumVersion": "10"
+		 }
+	],
+	"Nodejs": {
+		 "Version": "20",
+		 "Debug": "enabled"
+	},
+	"UUID": "com.pepepizza.soundcloud-control-sd"
+}
