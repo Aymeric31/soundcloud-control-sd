@@ -4,18 +4,17 @@ import { PlayPauseAction } from "./actions/playpause";
 import { NextAction } from "./actions/next";
 import { InitializeAudioAction } from "./actions/initializeaudio";
 
-
-// Activez le niveau de journalisation TRACE pour déboguer les messages entre le Stream Deck et le plugin.
+// Enable TRACE log level to debug messages between Stream Deck and the plugin.
 streamDeck.logger.setLevel(LogLevel.TRACE);
 
-// Enregistrez l'action Play/Pause.
+// Register the Play/Pause action.
 streamDeck.actions.registerAction(new PlayPauseAction());
 
-// Enregistrez l'action Next.
+// Register the Next action.
 streamDeck.actions.registerAction(new NextAction());
 
-// Enregistrez l'action InitializeAudio.
+// Register the InitializeAudio action.
 streamDeck.actions.registerAction(new InitializeAudioAction());
 
-// Connectez le plugin au Stream Deck.
+// Connect the plugin to Stream Deck.
 streamDeck.connect();
